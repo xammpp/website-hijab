@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Hijab</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent custom-navbar">
+      <div class="container" data-aos="fade-down" data-aos-duration="800">
+        <a class="navbar-brand" href="#home" id="navbarLogo">Toko Hijab</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+              <!-- Navlink aktif -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galeri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center text-md-start" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="image/hero-2.png" class="img-fluid hero-image" alt="Hijab Image" />
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 class="hero-title">Hijab Modis & <span>Terjangkau</span></h1>
+            <p class="hero-subtitle">Koleksi hijab dengan desain terbaru untuk melengkapi gaya Anda.</p>
+            <a href="#products" class="btn btn-primary btn-lg hero-btn">Lihat Produk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="about-title">Tentang Kami</h2>
+            <p class="about-text">Kami adalah penyedia hijab modern dengan berbagai pilihan warna dan desain yang sesuai dengan gaya Anda. Produk kami dirancang untuk memberikan kenyamanan dan keindahan dalam setiap kesempatan.</p>
+          </div>
+          <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+            <img src="image/about-1.png" class="img-fluid about-image" alt="Tentang Kami" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Produk Kami</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4" data-aos="flip-left" data-aos-duration="800">
+            <div class="card product-card">
+              <img src="image/product.png" class="card-img-top" alt="Hijab 1" />
+              <div class="card-body">
+                <h5 class="card-title">Hijab Premium</h5>
+                <p class="card-text">Desain elegan dengan bahan berkualitas tinggi.</p>
+                <a href="#" class="btn btn-primary product-btn">RP. 100.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4" data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+            <div class="card product-card">
+              <img src="image/product.png" class="card-img-top" alt="Hijab 2" />
+              <div class="card-body">
+                <h5 class="card-title">Hijab Casual</h5>
+                <p class="card-text">Nyaman dipakai untuk aktivitas sehari-hari.</p>
+                <a href="#" class="btn btn-primary product-btn">RP. 100.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
+            <div class="card product-card">
+              <img src="image/product.png" class="card-img-top" alt="Hijab 3" />
+              <div class="card-body">
+                <h5 class="card-title">Hijab Sporty</h5>
+                <p class="card-text">Dirancang khusus untuk aktivitas olahraga.</p>
+                <a href="#" class="btn btn-primary product-btn">RP. 100.000</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
+            <div class="card product-card">
+              <img src="image/product.png" class="card-img-top" alt="Hijab 4" />
+              <div class="card-body">
+                <h5 class="card-title">Hijab Elegan</h5>
+                <p class="card-text">Kombinasi gaya dan kenyamanan.</p>
+                <a href="#" class="btn btn-primary product-btn">RP. 100.000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery py-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Galeri</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800">
+            <div class="gallery-item">
+              <img src="image/gallery.png" class="img-fluid" alt="Gallery Image 1" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+            <div class="gallery-item">
+              <img src="image/gallery.png" class="img-fluid" alt="Gallery Image 2" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+            <div class="gallery-item">
+              <img src="image/gallery.png" class="img-fluid" alt="Gallery Image 3" />
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content" data-aos="fade-up" data-aos-duration="1000">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <address>
+              <p><i class="fas fa-map-marker-alt"></i> Jl. Contoh Alamat No.123, Jakarta, Indonesia</p>
+              <p><i class="fas fa-envelope"></i> <a href="mailto:info@tokohijab.com">info@tokohijab.com</a></p>
+              <p><i class="fas fa-phone"></i> +62 123 456 789</p>
+            </address>
+          </div>
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#" class="facebook" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="twitter" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <p>© 2024 Toko Hijab. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript Eksternal -->
+    <script src="js/script.js"></script>
+
+    <!-- Inisialisasi AOS -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
