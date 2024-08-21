@@ -6,30 +6,91 @@ body {
 }
 
 /* Navbar Section */
+#navbarLogo {
+  color: #dcae96;
+  transition: color 0.4s ease;
+}
+
+.custom-navbar.solid #navbarLogo {
+  color: #fff;
+}
+
 .custom-navbar {
+  height: 80px;
+  transition: background-color 0.4s ease;
+}
+
+.custom-navbar.transparent {
   background-color: transparent;
-  transition: background-color 0.3s ease;
-  padding: 20px 0; /* Tinggi navbar */
 }
 
-.custom-navbar .navbar-brand {
-  color: #dcae96;
+.custom-navbar.solid {
+  background-color: #dcae96;
 }
 
-.custom-navbar .navbar-nav .nav-link {
-  color: #dcae96;
-  font-weight: 500; /* Menambahkan ketebalan font */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 28px;
+  transition: color 0.4s ease;
 }
 
-/* Navbar link yang aktif */
-.custom-navbar .navbar-nav .nav-link.active {
-  color: #36454f; /* Warna teks navlink yang aktif saat navbar solid */
+.navbar-nav .nav-link {
+  color: #dcae96; /* Warna link */
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  transition: color 0.4s ease;
 }
 
-/* Navbar-toggler icon */
+.custom-navbar.solid .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.custom-navbar.solid .navbar-nav .nav-link:hover {
+  color: #e6e6fa; /* Warna hover saat navbar discroll */
+}
+
+.custom-navbar.transparent .navbar-nav .nav-link:hover {
+  color: #6d6875; /* Warna hover saat navbar transparan */
+}
+
+.navbar-nav .nav-link.active {
+  color: #dcae96; /* Warna untuk navlink aktif */
+}
+
+/* Hapus garis bawah pada navlink aktif */
+.navbar-nav .nav-link.active::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #e6e6fa;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Warna hamburger menu untuk navbar transparan */
+.custom-navbar.transparent .navbar-toggler-icon {
+  color: #dcae96; /* Warna hamburger menu saat navbar transparan */
+}
+
+/* Warna hamburger menu untuk navbar solid */
+.custom-navbar.solid .navbar-toggler-icon {
+  color: #fff; /* Warna hamburger menu saat navbar solid */
+}
+
+/* Mengubah warna garis hamburger menu */
 .navbar-toggler-icon {
-  background-image: none;
-  font-size: 24px;
+  background-image: none; /* Menghapus gambar default */
+  width: 30px; /* Lebar hamburger menu */
+  height: 30px; /* Tinggi hamburger menu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-toggler-icon::before {
@@ -38,26 +99,14 @@ body {
   color: #dcae96; /* Warna default hamburger menu */
 }
 
-/* Navbar saat discroll (solid) */
-.custom-navbar.solid {
-  background-color: #dcae96;
-}
-
-.custom-navbar.solid .navbar-brand,
-.custom-navbar.solid .navbar-nav .nav-link,
+/* Warna hamburger menu saat navbar discroll */
 .custom-navbar.solid .navbar-toggler-icon::before {
-  color: #fff;
+  color: #fff; /* Warna hamburger menu saat navbar solid */
 }
 
-/* Navbar-link hover state */
-.navbar-nav .nav-link:hover {
-  color: #fff; /* Warna teks saat hover */
-}
-
-/* Navbar responsive adjustments */
 @media (max-width: 991.98px) {
   .custom-navbar {
-    height: 70px; /* Tinggi navbar pada layar kecil */
+    height: 70px;
   }
 
   .navbar-nav .nav-link {
